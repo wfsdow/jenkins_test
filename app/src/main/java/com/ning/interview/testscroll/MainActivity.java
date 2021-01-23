@@ -242,7 +242,7 @@ public class MainActivity extends Activity implements
     public boolean onChildClick(ExpandableListView parent, View v,
                                 int groupPosition, int childPosition, long id) {
         Toast.makeText(MainActivity.this,
-                childList.get(groupPosition).get(childPosition).getName(), 1)
+                childList.get(groupPosition).get(childPosition).getName(), Toast.LENGTH_LONG)
                 .show();
 
         return false;

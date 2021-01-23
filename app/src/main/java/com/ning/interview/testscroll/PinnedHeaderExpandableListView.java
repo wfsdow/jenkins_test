@@ -39,7 +39,7 @@ import android.widget.ExpandableListView;
 import android.widget.AbsListView.OnScrollListener;
 
 public class PinnedHeaderExpandableListView extends ExpandableListView implements OnScrollListener {
-    private static final String TAG = "PinnedHeaderExpandableListView";
+    private static final String TAG = "PinnedHeaderListView";
     private static final boolean DEBUG = true;
 
     public interface OnHeaderUpdateListener {
