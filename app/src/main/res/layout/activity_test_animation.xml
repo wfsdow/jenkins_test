@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".testanimation.TestAnimationActivity">
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="show"
+        app:layout_constraintEnd_toEndOf="@+id/hide"
+        app:layout_constraintStart_toStartOf="@+id/hide"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="59dp"
+        android:text="hide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="42dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@color/design_default_color_error"
+        android:text="test animation"
+        app:layout_constraintStart_toStartOf="@+id/hide"
+        app:layout_constraintTop_toBottomOf="@+id/hide" />
+</androidx.constraintlayout.widget.ConstraintLayout>
